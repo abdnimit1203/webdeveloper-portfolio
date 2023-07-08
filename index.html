@@ -1,145 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/icons/nodejs.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/portfolio.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/icons/nodejs.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+  </head>
+  <body>
     <header class="header">
+      <!---------------------- NAVBAR--------- -->
+      <nav>
+        <h3 class="nav-title">AB<span class="orange-text">D N</span>IMIT</h3>
+        <ul>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><button class="btn-primary">Hire Me</button></li>
+        </ul>
+      </nav>
 
-        <!---------------------- NAVBAR--------- -->
-        <nav>
-            <h3 class="nav-title">AB<span class="orange-text">D N</span>IMIT</h3>
-            <ul>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><button class="btn-primary">Hire Me</button></li>
-            </ul>
-        </nav>
-
-        <!-- BANNER Part -->
-        <div class="banner">
-            <div class="banner-content">
-                <h3 class="banner-greeting">Hi, I am</h3>
-                <h1 class="banner-title">Abdullah Ibne Ali</h1>
-                <p class="banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ullam architecto maiores iusto tempore quisquam.</p>
-                <button class="btn-primary">Download CV</button>
-                <button class="btn-primary">Contact</button>
-            </div>
-            <img class="profile-pic" src="images/abd.png" alt="">
+      <!-- BANNER Part -->
+      <div class="banner">
+        <div class="banner-content">
+          <h3 class="banner-greeting">Hi, I am</h3>
+          <h1 class="banner-title">Abdullah Ibne Ali</h1>
+          <p class="banner-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ullam
+            architecto maiores iusto tempore quisquam.
+          </p>
+          <button class="btn-primary">Download CV</button>
+          <button class="btn-primary">Contact</button>
         </div>
+        <img class="profile-pic" src="images/abd.png" alt="" />
+      </div>
     </header>
     <main>
-        <section class="about">
-            <h3 class="section-title">About Me</h3>
-            <p class="section-description">A developer is the key individual behind all software applications. Generally, developers are well versed in at least one programming language and proficient in the art of structuring and developing software code for software or a program. Depending on job role and type of software developed, a developer may be classified as a software developer, application developer, mobile developer, Web developer, etc.</p>
+      <section class="about">
+        <h3 class="section-title">About Me</h3>
+        <p class="section-description">
+          A developer is the key individual behind all software applications.
+          Generally, developers are well versed in at least one programming
+          language and proficient in the art of structuring and developing
+          software code for software or a program. Depending on job role and
+          type of software developed, a developer may be classified as a
+          software developer, application developer, mobile developer, Web
+          developer, etc.
+        </p>
 
-           <!-- SHORTCUT .about-info*4>h4.info-title+p.info-description -->
-            <div class="about-info-container">
-                <div class="about-info">
-                    <h4 class="info-title">Name:</h4>
-                    <p class="info-description">Abdullah Ibne Ali</p>
-                </div>
-                <div class="about-info">
-                    <h4 class="info-title">Email:</h4>
-                    <p class="info-description">abdullah.ibneali152pro@gmail.com</p>
-                </div>
-                <div class="about-info">
-                    <h4 class="info-title">Date of Birth:</h4>
-                    <p class="info-description">12th March 1997</p>
-                </div>
-                <div class="about-info">
-                    <h4 class="info-title">From:</h4>
-                    <p class="info-description">Tokyo, Japan</p>
-                </div>
-            </div>
-        </section>
-        <!-- what i do section -->
-        <section>
-            <h3 class="section-title">What i do</h3>
-            <p id="what-i-do-description" class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates vel repellendus, illum voluptatibus facere porro, quae hic quos at sapiente. Nisi inventore optio repudiandae?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nemo nisi rem</p>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="images/icons/nodejs.png" alt="">
-                    <h3 class="skill-title">Node JS</h3>
-                    <p class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolore, dolorem voluptatem ex tenetur laborum enim mollitia quo hic nostrum aliquam repudiandae fuga cumque porro sunt amet impedit excepturi voluptas!</p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/mongo.png" alt="">
-                    <h3 class="skill-title">Mongo DB</h3>
-                    <p class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt commodi est nostrum nobis aperiam porro cupiditate assumenda ut doloribus soluta nihil maxime dolorum eius, sit asperiores vero, aliquam consectetur dolorem!</p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/js.png" alt="javascript">
-                    <h3 class="skill-title">Vanilla JavaScript</h3>
-                    <p class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ducimus delectus ratione ab, obcaecati quae quia numquam saepe fuga esse omnis similique vitae repellat rem dolores nostrum doloribus itaque hic!</p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/react.png" alt="">
-                    <h3 class="skill-title">React</h3>
-                    <p class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem illum soluta odio repellendus, tempora aspernatur sapiente nemo eum quia assumenda optio fuga reiciendis aperiam voluptates velit sed culpa ea.</p>
-                </div>
-            </div>
-        </section>
+        <!-- SHORTCUT .about-info*4>h4.info-title+p.info-description -->
+        <div class="about-info-container">
+          <div class="about-info">
+            <h4 class="info-title">Name:</h4>
+            <p class="info-description">Abdullah Ibne Ali</p>
+          </div>
+          <div class="about-info">
+            <h4 class="info-title">Email:</h4>
+            <p class="info-description">abdullah.ibneali152pro@gmail.com</p>
+          </div>
+          <div class="about-info">
+            <h4 class="info-title">Date of Birth:</h4>
+            <p class="info-description">12th March 1997</p>
+          </div>
+          <div class="about-info">
+            <h4 class="info-title">From:</h4>
+            <p class="info-description">Tokyo, Japan</p>
+          </div>
+        </div>
+      </section>
+      <!-- what i do section -->
+      <section>
+        <h3 class="section-title">What i do</h3>
+        <p id="what-i-do-description" class="section-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          voluptates vel repellendus, illum voluptatibus facere porro, quae hic
+          quos at sapiente. Nisi inventore optio repudiandae?Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Consequatur nemo nisi rem
+        </p>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="images/icons/nodejs.png" alt="" />
+            <h3 class="skill-title">Node JS</h3>
+            <p class="skill-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              dolore, dolorem voluptatem ex tenetur laborum enim mollitia quo
+              hic nostrum aliquam repudiandae fuga cumque porro sunt amet
+              impedit excepturi voluptas!
+            </p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/mongo.png" alt="" />
+            <h3 class="skill-title">Mongo DB</h3>
+            <p class="skill-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+              commodi est nostrum nobis aperiam porro cupiditate assumenda ut
+              doloribus soluta nihil maxime dolorum eius, sit asperiores vero,
+              aliquam consectetur dolorem!
+            </p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/js.png" alt="javascript" />
+            <h3 class="skill-title">Vanilla JavaScript</h3>
+            <p class="skill-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              ducimus delectus ratione ab, obcaecati quae quia numquam saepe
+              fuga esse omnis similique vitae repellat rem dolores nostrum
+              doloribus itaque hic!
+            </p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/react.png" alt="" />
+            <h3 class="skill-title">React</h3>
+            <p class="skill-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              quidem illum soluta odio repellendus, tempora aspernatur sapiente
+              nemo eum quia assumenda optio fuga reiciendis aperiam voluptates
+              velit sed culpa ea.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- a summary of my resume  Section-->
-        <section>
+      <!-- a summary of my resume  Section-->
+      <section>
         <h3 class="section-title">A Summary Of My Resume</h3>
         <div class="resume-container">
-            <div class="resume-container-column">
-                <h3 class="resume-container-title">My Education</h3>
-                <div class="resume-item">
-                    <h2 class="resume-item-title">Master in Computer Engineering</h2>
-                    <h3 class="resume-item-institute">Harvard University / 2024-2025</h3>
-                    <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sed? Impedit cum delectus eum fugiat illo. Provident odio ex ipsum.</p>
-                    <hr>
-                </div>
-                <div class="resume-item">
-                    <h2 class="resume-item-title">Bachelors of Science</h2>
-                    <h3 class="resume-item-institute">North South University</h3>
-                    <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi alias minus molestiae tempore assumenda ut quaerat a molestias veniam.</p>
-                    <hr>
-                </div>
-                <div class="resume-item">
-                    <h2 class="resume-item-title">HSC</h2>
-                    <h3 class="resume-item-institute">Milestone College</h3>
-                    <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi alias minus molestiae tempore assumenda ut quaerat a molestias veniam.</p>
-                </div>
+          <div class="resume-container-column">
+            <h3 class="resume-container-title">My Education</h3>
+            <div class="resume-item">
+              <h2 class="resume-item-title">Master in Computer Engineering</h2>
+              <h3 class="resume-item-institute">
+                Harvard University / 2024-2025
+              </h3>
+              <p class="resume-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, sed? Impedit cum delectus eum fugiat illo. Provident
+                odio ex ipsum.
+              </p>
+              <hr />
             </div>
-            <div class="resume-container-column">
-                <h3 class="resume-container-title">My Experience</h3>
-                <div class="resume-item">
-                    <h2 class="resume-item-title">Product Manager (Internship)</h2>
-                    <h3 class="resume-item-institute">RedX Mar2022 - Jun2022 </h3>
-                    <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi alias minus molestiae tempore assumenda ut quaerat a molestias veniam.</p>
-                    <hr>
-                </div>
-                <div class="resume-item">
-                    <h2 class="resume-item-title">Sleeping</h2>
-                    <h3 class="resume-item-institute">THE BED</h3>
-                    <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi alias minus molestiae tempore assumenda ut quaerat a molestias veniam.</p>
-                    <hr>
-                </div>
-                <div class="resume-item">
-                    <h2 class="resume-item-title">Procastination</h2>
-                    <h3 class="resume-item-institute">IN BED</h3>
-                    <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi alias minus molestiae tempore assumenda ut quaerat a molestias veniam.</p>
-                </div>
+            <div class="resume-item">
+              <h2 class="resume-item-title">Bachelors of Science</h2>
+              <h3 class="resume-item-institute">North South University</h3>
+              <p class="resume-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                eligendi alias minus molestiae tempore assumenda ut quaerat a
+                molestias veniam.
+              </p>
+              <hr />
             </div>
+            <div class="resume-item">
+              <h2 class="resume-item-title">HSC</h2>
+              <h3 class="resume-item-institute">Milestone College</h3>
+              <p class="resume-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                eligendi alias minus molestiae tempore assumenda ut quaerat a
+                molestias veniam.
+              </p>
+            </div>
+          </div>
+          <div class="resume-container-column">
+            <h3 class="resume-container-title">My Experience</h3>
+            <div class="resume-item">
+              <h2 class="resume-item-title">Product Manager (Internship)</h2>
+              <h3 class="resume-item-institute">RedX Mar2022 - Jun2022</h3>
+              <p class="resume-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                eligendi alias minus molestiae tempore assumenda ut quaerat a
+                molestias veniam.
+              </p>
+              <hr />
+            </div>
+            <div class="resume-item">
+              <h2 class="resume-item-title">Sleeping</h2>
+              <h3 class="resume-item-institute">THE BED</h3>
+              <p class="resume-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                eligendi alias minus molestiae tempore assumenda ut quaerat a
+                molestias veniam.
+              </p>
+              <hr />
+            </div>
+            <div class="resume-item">
+              <h2 class="resume-item-title">Procastination</h2>
+              <h3 class="resume-item-institute">IN BED</h3>
+              <p class="resume-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                eligendi alias minus molestiae tempore assumenda ut quaerat a
+                molestias veniam.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="download-cv">
-            <button class="btn-primary">Download CV</button>
+          <button class="btn-primary">Download CV</button>
         </div>
-    </section>
+      </section>
     </main>
+    <!------------------- FOOTER ----------------->
     <footer>
-
+      <div class="footer-column">
+        <h3 class="section-title">Lets connect</h3>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iure
+          aliquam, rerum distinctio nemo nisi libero dolorem quisquam esse modi
+          ex voluptatum itaque animi magnam recusandae eum quia minima iusto
+          deserunt error dignissimos, vitae cum!
+        </p>
+        <div class="social-links">
+          <a href=""><img src="images/icons/facebook.png" alt="" /></a>
+          <a href=""><img src="images/icons/insta.png" alt="" /></a>
+          <a href=""><img src="images/icons/twitter.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3 class="section-title">Message me</h3>
+        <form class="contact">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write something..."></textarea>
+            <input class="btn-primary" type="submit" value="Submit">
+        </form>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

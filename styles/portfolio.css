@@ -98,6 +98,7 @@ main{
 }
 main section{
     margin-top: 46px;
+    margin-bottom: 30px;
 }
 /* about section styles */
 .about {
@@ -161,9 +162,29 @@ main section{
   font-size: 18px;
 }
 .resume-container hr{
-  margin 30px;
+  margin: 30px;
 }
 .download-cv{
   text-align: center;
   margin-top: 50px;
+}
+footer{
+  display: flex;
+  gap: 100px;
+  background-color: #fff8f3;
+  padding: 130px 200px;
+}
+.footer-column{
+  width: 50%;
+}
+.contact input[type="text"], input[type="email"],textarea{
+  display: block;
+  margin-bottom: 24px;
+  padding: 18px 35px;
+  color: #757575;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  border: 0;
+  background: white;
+  width: 100%;
 }
