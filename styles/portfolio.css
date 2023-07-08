@@ -16,6 +16,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   padding: 15px 35px;
+  cursor: pointer;
 }
 
 .section-title {
@@ -91,11 +92,21 @@ nav a {
 }
 
 /* main section styles */
-
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 /* about section styles */
 .about {
   margin: 130px 0px;
   padding: 130px;
   border-radius: 10px;
   background: #fff8f3;
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-info{
+    text-align: center;
 }
