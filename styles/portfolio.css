@@ -60,7 +60,8 @@ nav a {
 /* header related style */
 .header {
   background-color: #fff8f3;
-  background-image: url("../images/header_bg.png"), url("../images/developer.png");
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
   background-position: bottom right, top left; /* important code two images positioning */
 }
@@ -92,13 +93,13 @@ nav a {
 }
 
 /* main section styles */
-main{
-    max-width: 1140px;
-    margin: 0 auto;
+main {
+  max-width: 1140px;
+  margin: 0 auto;
 }
-main section{
-    margin-top: 46px;
-    margin-bottom: 30px;
+main section {
+  margin-top: 46px;
+  margin-bottom: 30px;
 }
 /* about section styles */
 .about {
@@ -107,77 +108,78 @@ main section{
   border-radius: 10px;
   background: #fff8f3;
 }
-.about-info-container{
-    display: flex;
-    justify-content: space-around;
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
 }
-.about-info{
-    text-align: center;
+.about-info {
+  text-align: center;
 }
 
-#what-i-do-description{
-    padding: 30px 150px;
+#what-i-do-description {
+  padding: 30px 150px;
 }
 
 /* SKILL CSS */
 
-.skills-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0px;
-    gap: 24px;
-    
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  gap: 24px;
 }
-.skill{
-    padding: 30px 20px;
-    border-radius: 5px;
-    background: white;
-    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+.skill {
+  padding: 30px 20px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
-.skill-description{
-    padding: 5px;
+.skill-description {
+  padding: 5px;
 }
 
 /* resume */
-.resume-container{
+.resume-container {
   display: flex;
   gap: 50px;
 }
-.resume-container-title{
-
+.resume-container-title {
   font-size: 30px;
   font-weight: 700;
 }
-.resume-item-institute, .resume-item-description{
+.resume-item-institute,
+.resume-item-description {
   color: #757575;
   margin-top: ;
 }
-.resume-item-title{
+.resume-item-title {
   color: #474747;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.resume-item-institute{
+.resume-item-institute {
   font-size: 18px;
 }
-.resume-container hr{
+.resume-container hr {
   margin: 30px;
 }
-.download-cv{
+.download-cv {
   text-align: center;
   margin-top: 50px;
 }
-footer{
+footer {
   display: flex;
   gap: 100px;
   background-color: #fff8f3;
   padding: 130px 200px;
 }
-.footer-column{
+.footer-column {
   width: 50%;
 }
-.contact input[type="text"], input[type="email"],textarea{
+.contact input[type="text"],
+input[type="email"],
+textarea {
   display: block;
   margin-bottom: 24px;
   padding: 18px 35px;
@@ -187,4 +189,85 @@ footer{
   border: 0;
   background: white;
   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 30px;
+    height: auto;
+    padding: 20px;
+    
+  }
+  .btn-primary {
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    
+  }
+  .banner-title {
+    font-size: 2em;
+  }
+  .banner .profile-pic {
+    width: 80%;
+    margin: auto;
+  }
+  .skills-container {
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+  .about-info-container {
+    flex-direction: column;
+  }
+  .about {
+    margin: 20px 0px;
+    padding: 30px;
+  }
+  #what-i-do-description {
+    padding: 20px;
+  }
+  .resume-container {
+    flex-direction: column;
+    margin: 30px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .footer-column {
+    margin: 20px;
+    width: 50%;
+  }
+  /* form{
+    width: 50%;
+    margin: auto;
+  } */
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .contact input[type="text"],
+  input[type="email"],
+  textarea {
+    margin: 24px auto;
+    padding: 15px 25px;
+    width: 70%;
+  }
+  .section-title{
+    font-size: 1.5em;
+  }
 }
